@@ -114,3 +114,12 @@ function setElement(elements,area){
     element.innerText =area;
     element.style.color='red'
 }
+
+// Ellipse
+function ellipseCalculator(){
+    const ellipseA = pentagonInputFiled('ellipse-a')
+    const ellipseB =pentagonInputFiled("ellipse-b")
+    const total=3.14*ellipseA*ellipseB;
+    console.log(total)
+    setElement("ellipse_area",total.toFixed(2))
+}
