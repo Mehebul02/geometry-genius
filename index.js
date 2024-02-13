@@ -69,7 +69,7 @@ function rhombusCalculator(){
     const height = getInputFiled('rhombus-height');
     const total=0.5*base*height;
     console.log(total);
-    setInnerText("rhombus_area",total)
+    setInnerText("rhombus_area",total);
     
 }
 
@@ -86,5 +86,31 @@ function getInputFiled(input){
 function setInnerText(elementId,area){
     const inner =document.getElementById(elementId);
    inner.innerText=area;
-   inner.style.color='red'
+   inner.style.color='red';
+}
+
+
+// Pentagon
+
+function pentagonCalculator(){
+    const peri=pentagonInputFiled("pentagon-peri");
+   const apo =pentagonInputFiled("pentagon-apo");
+   const total = 0.5 * peri*apo;
+   console.log(total);
+   setElement("pentagon_area",total)
+  
+    
+}
+
+function pentagonInputFiled(input){
+    const inputFiled =document.getElementById(input);
+    const inputText =inputFiled.value;
+    const value=parseFloat(inputText);
+    return value;
+
+}
+function setElement(elements,area){
+    const element =document.getElementById(elements);
+    element.innerText =area;
+    element.style.color='red'
 }
