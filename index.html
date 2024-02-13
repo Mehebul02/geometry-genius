@@ -14,9 +14,9 @@
     <main >
         <!-- main content -->
         <div class="flex flex-col lg:flex-row gap-40">
-            <div class="flex-1 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-20" >
+            <div class="flex-1 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-14" >
                 <!-- triangle card -->
-                <div class="card card-compact  bg-[#FFFFFF] shadow-xl mb-10 ">
+                <div class="card card-compact  bg-[#FBBCED] shadow-xl mb-10 p-10">
                     <figure><img src="images/triangle.png" alt=""></figure>
                     <div class="card-body">
                       <h2 class="text-2xl font-bold text-center">Triangle</h2>
@@ -37,7 +37,7 @@
                     </div>
                   </div>
                 <!-- Rectangle card -->
-                <div class="card card-compact  bg-[#FFFFFF] shadow-xl mb-10 ">
+                <div class="card card-compact  bg-[#FFFFFF] shadow-xl mb-10 p-10">
                   <figure><img src="images/rectangle.png" alt=""></figure>
                   <div class="card-body">
                     <h2 class="text-2xl font-bold text-center">Rectangle</h2>
@@ -58,7 +58,7 @@
                   </div>
                 </div>
                 <!-- Parallelogram-->
-                <div class="card card-compact  bg-[#FFFFFF] shadow-xl mb-10 ">
+                <div class="card card-compact  bg-[#FFFFFF] shadow-xl mb-10 p-10">
                   <figure><img src="images/parallelogram.png" alt=""></figure>
                   <div class="card-body">
                     <h2 class="text-2xl font-bold text-center">Parallelogram</h2>
@@ -74,6 +74,27 @@
                   </div>
                     <div class="card-actions justify-end">
                       <button   onclick="calculatorParallelogram()" class="btn btn-primary w-full bg-[#1090D8] border-none text-white font-bold mt-4">Calculate</button>
+                    </div>
+                    
+                  </div>
+                </div>
+                <!-- Rhombus-->
+                <div class="card card-compact  bg-[#69C7F0] shadow-xl mb-10 p-10">
+                  <figure><img src="images/rhombus.png" alt=""></figure>
+                  <div class="card-body">
+                    <h2 class="text-2xl font-bold text-center">Rhombus</h2>
+                    <p class="text-xl text-center">Area = 0.5 * d <sub>1</sub> * <span>d</span> <sub>2</sub></p>
+                   <div class=" flex justify-center items-center flex-col lg:flex-row  mt-2">
+                    <input id="rhombus-base" class="w-24 text-xl rounded-md p-2  border-2 border-gray-600" type="text" placeholder="Base"><br>
+                    <span class="mr-4 ml-2 text-xl">cm</span>
+                    <input id="rhombus-height" class="w-24 text-xl rounded-md p-2  border-2 border-gray-600" type="text" placeholder="Height">
+                    <span class="mr-4 ml-2 text-xl" >cm</span>
+                   </div>
+                   <div>
+                    <p class="text-xl font-semibold mt-2">Total Area: <span id="rhombus_area"></span><span>cm</span><sup>2</sup></p>
+                  </div>
+                    <div class="card-actions justify-end">
+                      <button   onclick="rhombusCalculator()" class="btn btn-primary w-full bg-[#1090D8] border-none text-white font-bold mt-4">Calculate</button>
                     </div>
                     
                   </div>
